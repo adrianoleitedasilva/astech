@@ -1,0 +1,52 @@
+/* Layout */
+html, body, #home {
+    height: 100%;
+    overflow-x: hidden; /* OCULTANDO BARRA DE ROLAGEM NA HORIZONTAL */
+}
+
+@font-face {
+    font-family: 'kollektif';
+    src: url(fonts/Kollektif.ttf);
+}
+
+
+body {
+    background: url(imagens/capanova.png),
+    url(imagens/ruido.png),
+    linear-gradient(#800000, #a4011e);
+    background-attachment: fixed;
+    font-family: Helvetica, 'kollektif' , sans-serif;
+}
+
+/* Barra de Navegação */
+nav.navbar-transparente {
+    padding: 15px 0px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-family: 'kollektif';
+    letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #a4011e;
+    text-decoration: underline;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.divisor {
+    width: 1px;
+    background: white;
+    margin: 12px 15px;
+}
+
+/* CAPA */
+.capa {
+    text-align: center;
+}
