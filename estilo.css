@@ -9,15 +9,6 @@ html, body, #home {
     src: url(fonts/Kollektif.ttf);
 }
 
-
-body {
-    background: url(imagens/capanova.png),
-    url(imagens/ruido.png),
-    linear-gradient(#800000, #a4011e);
-    background-attachment: fixed;
-    font-family: Helvetica, 'kollektif' , sans-serif;
-}
-
 /* Barra de Navegação */
 nav.navbar-transparente {
     padding: 15px 0px;
@@ -46,7 +37,103 @@ nav.navbar-transparente {
     margin: 12px 15px;
 }
 
-/* CAPA */
+/* HOME E CAPA */
+#home {
+    background: url(imagens/capanova.png),
+    url(imagens/ruido.png),
+    linear-gradient(#800000, #a4011e);
+    background-attachment: fixed;
+    font-family: Helvetica, 'kollektif' , sans-serif;
+}
+
 .capa {
     text-align: center;
+}
+
+.btn-custom {
+    color: white;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-vermelho {
+    background: #a4011e;
+}
+
+.btn-vermelho:hover {
+    background: #800000;
+    color: white;
+}
+
+.btn-branco {
+    border: 2px solid white;
+}
+
+.btn-branco:hover {
+    background-color: white;
+    color: black;
+}
+
+/* TIPOGRAFIA */
+h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+/* MEDIA QUERIES */
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.btn-custom {
+		margin: 10px 15px;
+		font-size: 1em;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	h1 {
+		font-size: 3em;
+	}
+	.btn-custom {
+		margin: 10px 15px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	h1 {
+		font-size: 4em;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	h1 {
+		font-size: 5em;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 6em;
+	}
 }
